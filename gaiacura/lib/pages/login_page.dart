@@ -32,18 +32,12 @@ class LoginPage extends StatelessWidget {
               const SizedBox(height: 25),
 
               // Username TextField
-              TextField(
-                decoration: InputDecoration(
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.white),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.blue), // Customize color as needed
-                  ),
-                ), // <-- Add this closing parenthesis
-              ),
+              MyTextField(),
+
+              const SizedBox(height: 10),
 
               // password textfield
+              MyTextField(),
 
               // forgot password?
 
@@ -55,10 +49,9 @@ class LoginPage extends StatelessWidget {
 
               // not a member? register now
             ],
-          ),
-        ),
-      ),
-    );
+          ), // Column
+        ), // Center
+      ), // SafeArea
+    ); // Scaffold
   }
 }
-
