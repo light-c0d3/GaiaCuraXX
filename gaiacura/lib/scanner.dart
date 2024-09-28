@@ -11,63 +11,90 @@ class _ScannerState extends State<Scanner> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
-      padding: EdgeInsets.only(top: 50),
+      color: Color(0xFFFCF6F0),
+      padding: EdgeInsets.only(top: 50, bottom: 10, left: 5, right: 5),
       child: Column(
+
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Card(
-            color: const Color.fromARGB(255, 255, 229, 243),
+            color: const Color.fromARGB(255, 203, 252, 182),
             child: Container(
               height: 70,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   InkWell(
-                    child: const Icon(
-                      Icons.scanner_outlined,
-                      size: 25,
-                      color: Colors.white,
-                    ),
-                    onTap: () {
-                      // code to scan
-                    },
-                  ),                  
-                  InkWell(
-                    child: const Icon(
-                      Icons.scanner_outlined,
-                      size: 25,
-                      color: Colors.white,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Icon(
+                          Icons.scanner_outlined,
+                          size: 25,
+                          color: Colors.white,
+                        ),
+                        Text(
+                          'Scan',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
                     ),
                     onTap: () {
                       // code to scan
                     },
                   ),
                   InkWell(
-                    child: const Icon(
-                      Icons.document_scanner,
-                      size: 25,
-                      color: Colors.white,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Icon(
+                          Icons.scanner_outlined,
+                          size: 25,
+                          color: Color(0xFFFCF6F0),
+                        ),
+                        Text(
+                          'Recognize',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
                     ),
                     onTap: () {
-                      // code to scan document
+                      // code to scan
                     },
                   ),
                   InkWell(
-                    child: const Icon(
-                      Icons.image_outlined,
-                      size: 25,
-                      color: Colors.white,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Icon(
+                          Icons.image_outlined,
+                          size: 25,
+                          color: Colors.white,
+                        ),
+                        Text(
+                          'Enhance',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
                     ),
                     onTap: () {
-                      // write code to open gallery
+                      // code to scan
                     },
                   ),
                 ],
               ),
             ),
-          ),          
+          ),
           Card(
-            color: const Color.fromARGB(255, 255, 229, 243),
+
+            color: Colors.black,
+            child: Container(
+              height: MediaQuery.of(context).size.height-300,
+            ),
+          ),
+
+          Card(
+            color: const Color.fromARGB(255, 203, 252, 182),
             child: Container(
               height: 100,
               child: Row(
