@@ -31,6 +31,16 @@ class _ScannerState extends State<Scanner> {
                     onTap: () {
                       // code to scan
                     },
+                  ),                  
+                  InkWell(
+                    child: const Icon(
+                      Icons.scanner_outlined,
+                      size: 25,
+                      color: Colors.white,
+                    ),
+                    onTap: () {
+                      // code to scan
+                    },
                   ),
                   InkWell(
                     child: const Icon(
